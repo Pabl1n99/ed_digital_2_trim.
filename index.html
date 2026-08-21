@@ -14,8 +14,8 @@
             font-family: sans-serif;
         }
 
-        header {
-            background-color: #03183b;
+        header, .secao-categoria {
+            background: linear-gradient(135deg, #1e3c72 0%, #03183b 50%, #0e013c 100%);
             color: #FFFFFF;
             text-align: center;
             width: 100%;
@@ -34,7 +34,6 @@
             border-radius: 12px;
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
         }
-
 
         img {
             max-width: 100%;
@@ -71,6 +70,7 @@
 </head>
 
 <body>
+    <!-- PRIMEIRA CATEGORIA / HEADER -->
     <header>
         <h1>Mundo das lutas</h1>
         <p>Histórias, curiosidades e a ciência por trás dos esportes de combate.</p>
@@ -80,53 +80,89 @@
         <article>
             <h2>Fatos Sobre O Jiu Jitsu Que Você Provavelmente Não Sabia</h2>
             <p class="artigo-autor">Por: Pablo Giovani</p>
-            <img src="https://cdn.dooca.store/588/posts/jiu-jitsu-storm-strong.jpg?v=1590179466" alt="Lutadores de Jiu Jitsu no tatame">
-        </article>
+            <img src="https://cdn.dooca.store/588/posts/jiu-jitsu-storm-strong.jpg?v=1590179466" alt="Lutadores de Jiu Jitsu no tatame"> 
+        </article> 
+ 
+        <article> 
+            <div class="card-artigo"> 
+                <h2>Como surgiu o Jiu Jitsu?</h2> 
+                <p>Ninguém sabe ao certo sua origem, mas segundo alguns historiadores o Jiu Jitsu ou "arte suave", nasceu na Índia e era praticado por monges budistas. Preocupados com a autodefesa, os monges desenvolveram uma técnica baseada nos princípios do equilíbrio, do sistema de articulação do corpo e das alavancas, evitando o uso da força e de armas. Com a expansão do budismo o Jiu Jitsu percorreu o Sudeste asiático, a China e, finalmente, chegou ao Japão, onde se desenvolveu e popularizou-se.</p> 
+                <div> 
+                    <button>❤️ <span>0</span></button> 
+                    <button>🥋 <span>0</span></button> 
+                </div> 
+            </div> 
+        </article> 
+ 
+        <article> 
+            <div class="card-artigo"> 
+                <h2>Como o Jiu Jitsu chegou ao Brasil 🇧🇷</h2> 
+                <p>Mitsuyo Maeda, conhecido como Conde Koma, viajou o mundo todo dando demonstrações de Judô para os ocidentais e chegou ao Brasil em 1915, onde conheceu Gastão Gracie. Pai de oito filhos, cinco homens e três mulheres, Gastão tornou-se um entusiasta do Jiu Jitsu e levou o mais velho, Carlos, para aprender a luta com o japonês.</p> 
+                <div> 
+                    <button>💓 <span>0</span></button> 
+                    <button>🌐 <span>0</span></button> 
+                    <button>🇧🇷 <span>0</span></button> 
+                </div> 
+            </div> 
+        </article> 
+    </main> 
 
-        <article>
-            <div class="card-artigo">
-                <h2>Como surgiu o Jiu Jitsu?</h2>
-                <p>Ninguém sabe ao certo sua origem, mas segundo alguns historiadores o Jiu Jitsu ou "arte suave", nasceu na Índia e era praticado por monges budistas. Preocupados com a autodefesa, os monges desenvolveram uma técnica baseada nos princípios do equilíbrio, do sistema de articulação do corpo e das alavancas, evitando o uso da força e de armas. Com a expansão do budismo o Jiu Jitsu percorreu o Sudeste asiático, a China e, finalmente, chegou ao Japão, onde se desenvolveu e popularizou-se.</p>
-                <div>
-                    <button>❤️ <span>0</span></button>
-                    <button>🥋 <span>0</span></button>
-                </div>
-            </div>
-        </article>
+    <!-- SEGUNDA CATEGORIA -->
+    <div class="secao-categoria">
+        <h1>Muay Thai</h1>
+        <p>A arte das oito armas e sua história milenar.</p>
+    </div>
 
+    <main>
         <article>
+            <h2>Origens do Boxe Tailandês</h2>
+            <img src="https://img.facts.net/wp-content/uploads/2024/09/38-facts-about-muay-thai-1726416669.jpg" alt="Lutadores de Muay Thai no ringue">
+            
             <div class="card-artigo">
-                <h2>Como o Jiu Jitsu chegou ao Brasil 🇧🇷</h2>
-                <p>Mitsuyo Maeda, conhecido como Conde Koma, viajou o mundo todo dando demonstrações de Judô para os ocidentais e chegou ao Brasil em 1915, onde conheceu Gastão Gracie. Pai de oito filhos, cinco homens e três mulheres, Gastão tornou-se um entusiasta do Jiu Jitsu e levou o mais velho, Carlos, para aprender a luta com o japonês.</p>
+                <h2>O que é o Muay Thai?</h2>
+                <p>O Muay Thai é uma arte marcial da Tailândia que utiliza golpes de punhos, cotovelos, joelhos e canelas, sendo conhecida globalmente como a arte das oito armas.</p>
                 <div>
-                    <button>💓 <span>0</span></button>
-                    <button>🌐 <span>0</span></button>
-                    <button>🇧🇷 <span>0</span></button>
+                    <button>🥊 <span>0</span></button>
+                    <button>🔥 <span>0</span></button>
                 </div>
             </div>
         </article>
     </main>
 
-    <script>
-        const botoes = document.querySelectorAll("button");
+    <main>
+        <article>
+            <h2>Origens do Boxe Tailandês</h2>
+            <div class="card-artigo">
+                <h2>O que é o Muay Thai?</h2>
+                <p>O Muay Thai é uma arte marcial da Tailândia que utiliza golpes de punhos, cotovelos, joelhos e canelas, sendo conhecida globalmente como a arte das oito armas.</p>
+                <div>
+                    <button>🥊 <span>0</span></button>
+                    <button>🔥 <span>0</span></button>
+                </div>
+            </div>
+        </article>
+    </main>
 
-        botoes.forEach(function (botao) {
-            let curtiu = false;
-
-            botao.addEventListener("click", function () {
-                let texto = botao.querySelector("span");
-                let contador = Number(texto.textContent);
-
-                if (!curtiu) {
-                    texto.textContent = contador + 1;
-                    curtiu = true;
-                } else {
-                    texto.textContent = contador - 1;
-                    curtiu = false;
-                }
-            });
-        });
-    </script>
-</body>
+    <script> 
+        const botoes = document.querySelectorAll("button"); 
+ 
+        botoes.forEach(function (botao) { 
+            let curtiu = false; 
+ 
+            botao.addEventListener("click", function () { 
+                let texto = botao.querySelector("span"); 
+                let contador = Number(texto.textContent); 
+ 
+                if (!curtiu) { 
+                    texto.textContent = contador + 1; 
+                    curtiu = true; 
+                } else { 
+                    texto.textContent = contador - 1; 
+                    curtiu = false; 
+                } 
+            }); 
+        }); 
+    </script> 
+</body> 
 
 </html>
