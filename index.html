@@ -7,33 +7,54 @@
     <title>Mundo das Lutas</title>
     <style>
         body {
-            background: linear-gradient(135deg, #1e3c72 0%, #03183b 50%, #000000 100%);
+            background: linear-gradient(135deg, #0d1b2a 0%, #1b263b 50%, #0d1b2a 100%);
             background-attachment: fixed;
             margin: 0;
             padding: 0;
             font-family: sans-serif;
+            color: #e0e1dd;
         }
 
         header, .secao-categoria {
-            background-color: #03183b;
-            color: #FFFFFF;
+            background-color: #0b132b;
+            color: #ffffff;
             text-align: center;
             width: 100%;
-            padding: 30px 20px;
+            padding: 35px 20px;
             box-sizing: border-box;
-            border-top: 5px solid #000000b9;
-            border-bottom: 5px solid #000000b9;
+            border-top: 4px solid #d4af37;
+            border-bottom: 4px solid #d4af37;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        header h1, .secao-categoria h1 {
+            margin: 0 0 10px 0;
+            font-size: 2.2rem;
+            letter-spacing: 1px;
+            color: #f4d03f;
+        }
+
+        header p, .secao-categoria p {
+            margin: 0;
+            color: #e0e1dd;
+            font-size: 1.05rem;
         }
 
         main {
-            background-color: #FFFFFF;
-            color: #17056f;
+            background-color: #ffffff;
+            color: #0f172a;
             text-align: center;
             max-width: 800px;
-            margin: 30px auto;
-            padding: 20px;
+            margin: 35px auto;
+            padding: 25px;
             border-radius: 12px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            border-top: 4px solid #d4af37;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        h2 {
+            color: #1e3a8a;
+            margin-top: 5px;
         }
 
         img {
@@ -41,31 +62,54 @@
             height: auto;
             border-radius: 8px;
             margin: 15px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         .artigo-autor {
-            font-weight: 900;
+            font-weight: 700;
+            color: #475569;
         }
 
         .card-artigo {
-            border: 1px solid #ccc;
+            border: 1px solid #e2e8f0;
+            background-color: #f8fafc;
             border-radius: 8px;
-            padding: 15px;
+            padding: 20px;
             margin-bottom: 20px;
             margin-top: 20px;
+            text-align: left;
+        }
+
+        .card-artigo h2 {
+            text-align: center;
+        }
+
+        .card-artigo p {
+            line-height: 1.6;
+            color: #334155;
+        }
+
+        .botoes-container {
+            text-align: center;
+            margin-top: 15px;
         }
 
         button {
             cursor: pointer;
-            padding: 8px 12px;
-            border: 1px solid #ccc;
+            padding: 9px 16px;
+            border: 1px solid #1e3a8a;
             border-radius: 6px;
-            background-color: #f9f9f9;
-            transition: background-color 0.2s;
+            background-color: #1e3a8a;
+            color: #ffffff;
+            font-weight: bold;
+            transition: all 0.2s ease;
+            margin: 0 4px;
         }
 
         button:hover {
-            background-color: #e9e9e9;
+            background-color: #d4af37;
+            border-color: #d4af37;
+            color: #0f172a;
         }
     </style>
 </head>
@@ -73,7 +117,7 @@
 <body>
     <!-- CATEGORIA 1: JIU JITSU -->
     <header>
-        <h1>Mundo das lutas</h1>
+        <h1>Mundo das Lutas</h1>
         <p>Histórias, curiosidades e a ciência por trás dos esportes de combate.</p>
     </header>
 
@@ -88,7 +132,7 @@
             <div class="card-artigo"> 
                 <h2>Como surgiu o Jiu Jitsu?</h2> 
                 <p>Ninguém sabe ao certo sua origem, mas segundo alguns historiadores o Jiu Jitsu ou "arte suave", nasceu na Índia e era praticado por monges budistas. Preocupados com a autodefesa, os monges desenvolveram uma técnica baseada nos princípios do equilíbrio, do sistema de articulação do corpo e das alavancas, evitando o uso da força e de armas. Com a expansão do budismo o Jiu Jitsu percorreu o Sudeste asiático, a China e, finalmente, chegou ao Japão, onde se desenvolveu e popularizou-se.</p> 
-                <div> 
+                <div class="botoes-container"> 
                     <button>❤️ <span>0</span></button> 
                     <button>🥋 <span>0</span></button> 
                 </div> 
@@ -99,7 +143,7 @@
             <div class="card-artigo"> 
                 <h2>Como o Jiu Jitsu chegou ao Brasil 🇧🇷</h2> 
                 <p>Mitsuyo Maeda, conhecido como Conde Koma, viajou o mundo todo dando demonstrações de Judô para os ocidentais e chegou ao Brasil em 1915, onde conheceu Gastão Gracie. Pai de oito filhos, cinco homens e três mulheres, Gastão tornou-se um entusiasta do Jiu Jitsu e levou o mais velho, Carlos, para aprender a luta com o japonês.</p> 
-                <div> 
+                <div class="botoes-container"> 
                     <button>💓 <span>0</span></button> 
                     <button>🌐 <span>0</span></button> 
                     <button>🇧🇷 <span>0</span></button> 
@@ -123,7 +167,7 @@
             <div class="card-artigo">
                 <h2>O que é o Muay Thai?</h2>
                 <p>O Muay Thai é uma arte marcial da Tailândia que utiliza golpes de punhos, cotovelos, joelhos e canelas, sendo conhecida globalmente como a arte das oito armas.</p>
-                <div>
+                <div class="botoes-container">
                     <button>🥊 <span>0</span></button>
                     <button>🔥 <span>0</span></button>
                 </div>
